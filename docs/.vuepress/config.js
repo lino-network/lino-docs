@@ -1,5 +1,6 @@
 module.exports = {
   title: 'Hello VuePress',
+  base: '/lino-docs/',
   themeConfig: {
     nav: [
       {
@@ -7,6 +8,7 @@ module.exports = {
         link: '/'
       },
     ],
+    repo: 'lino-network/lino-docs',
     sidebar: [
       {
         title: 'Overview', // 必要的
