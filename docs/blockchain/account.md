@@ -3,7 +3,7 @@
 A fully functional Lino account is comprised of 3 elements:
 
 1. **An Unchangeable Username**: 3-20 characters(lowercase letters, numbers, "-", and "."), must start with a letter. The username has to be unique and cannot be changed after registration.
-2. **Primary Key**: A cryptographic public and private key pair. The Lino **Account Address**, which has to be unique, ****is a deterministic hash of the public Primary Key. The Primary Key is used for signing messages. Additionally, it can be used for reseting an account's Signing Key or the current Primary Key.
+2. **Primary Key**: A cryptographic public and private key pair. The Lino **Account Address**, which has to be unique, is a deterministic hash of the public Primary Key. The Primary Key is used for signing messages. Additionally, it can be used for reseting an account's Signing Key or the current Primary Key.
 3. **Signing Key(optional)**: A cryptographic public and private key pair. A Signing Key can be optionally attached in the account registration, or be set in another message after registration. The Signing Key is used for signing messages. Different Lino accounts can share the same Signing Key.
 
 ## Registration

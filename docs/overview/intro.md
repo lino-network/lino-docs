@@ -4,7 +4,7 @@ The mission of Lino blockchain is to facilitate a **Value-sharing Content Econom
 
 ## LINO
 
-LINO is the fundamental unit of value on Lino blockchain. Lino blockchain is designed to algorithmically reward all contributors with newly minted LINO that is produced per block. You can access your LINO by registering an account on [lino](../lino_wallet_faq/faq.html#what-are-validators-and-what-do-they-do).
+LINO is the fundamental unit of value on Lino blockchain. Lino blockchain is designed to algorithmically reward all contributors with newly minted LINO that is produced per block. You can access your LINO by registering an account on [Lino Wallet](https://account.lino.network).
 ## Lino Blockchain Highlights
 
 ### Earn LINO While Watching on Lino Apps

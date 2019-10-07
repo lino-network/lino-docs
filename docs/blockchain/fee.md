@@ -1,10 +1,10 @@
 # Msg fee
 
-There are 3 types of Tx fee models applying to different types of messages.
+There are 3 types of network fee models applying to different types of messages.
 
 ## Developer Signed Messages
 
-It's counter-intuitive to charge a Tx fee for micro-donation or creating posts. Tx fee also discourages user to donate or create content. In order to provide a user-friendly experience, we use the **Dynamic Bandwidth Model**, similar to Steem, for all the developer signed messages. In other words, all developer signed messages are free, costing no transaction fees.
+It's counter-intuitive to charge a network fee for micro-donation or creating posts. Network fee also discourages user to donate or create content. In order to provide a user-friendly experience, we use the **Dynamic Bandwidth Model** for all the developer signed messages. In other words, all developer signed messages are free, costing no network fees.
 
 ## Dynamic Bandwidth Model
 
@@ -30,6 +30,8 @@ $$bandwith\ consumption = \mu*p$$
 
 [Example: Quota_DSM=266](./Example-Quota_DSM-266-8da5a80c-261c-4341-a88f-730bc6b676b3.csv)
 
+
+
 ## Vote Messages
 
 Vote messages are also exempt from any Tx fee.
@@ -43,6 +45,17 @@ An LS holder can vote for at most 3 validators, and has to wait for at least 1 w
 An LS holder can vote for any proposal for free. Votes for proposals cannot be altered.
 
 ## General Messages
+
+### Example: Quota_GM=66 (66 General Msg per second)
+| EMA quota Usage | Msg fee |
+| --- | --- |
+| 0 | 0.025 LINO |
+| 15 (23%) | 0.1 LINO |
+| 33 (50%) | 0.5 LINO |
+| 41 (62%) | 1 LINO |
+| 66 (100%) | 10 LINO |
+| 100 (150%) | 200 LINO |
+
 
 $$MPS_{GM}^{EMA}$$
 
