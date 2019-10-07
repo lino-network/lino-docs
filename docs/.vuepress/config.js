@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Lino Doc',
+  title: 'Lino Documentation',
   base: '/lino-docs/',
   themeConfig: {
     nav: [
@@ -19,6 +19,7 @@ module.exports = {
         sidebarDepth: 3, // 可选的, 默认值是 1
         children: [
           ['/overview/intro.html', 'Introduction'],
+          ['/overview/ls.html', 'LINO Stake'],
           ['/overview/block_rewards_distribution.html', 'Block Rewards Distribution']
         ]
       },
@@ -27,7 +28,9 @@ module.exports = {
         sidebarDepth: 3, // 可选的, 默认值是 1
         children: [
           ['/blockchain/account.html', 'Account'],
-          ['/blockchain/fee.html', 'Network Fee']
+          ['/blockchain/ida.html', 'In-app Digital Asset(IDA))'],
+          ['/blockchain/fee.html', 'Network Fee'],
+          ['/blockchain/governance.html', 'Governance']
         ]
       },
       {
@@ -40,12 +43,11 @@ module.exports = {
         ]
       },
       {
-        title: 'Developer', // 必要的
+        title: 'App Developer', // 必要的
         // sidebarDepth: 4, // 可选的, 默认值是 1,
         displayAllHeaders: true,
         children: [
           ['/developer/introduction.html', 'Introduction'],
-          ['/developer/ida.html', 'In-app Digital Asset(IDA))']
         ]
       },
       {
