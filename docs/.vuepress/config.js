@@ -1,5 +1,6 @@
 module.exports = {
   title: 'Lino Documentation',
+  base: '/lino-docs/',
   themeConfig: {
     nav: [
       {
@@ -11,6 +12,7 @@ module.exports = {
         link: 'https://account.lino.network'
       },
     ],
+    repo: 'lino-network/lino-docs',
     sidebar: [
       {
         title: 'Overview', // 必要的
