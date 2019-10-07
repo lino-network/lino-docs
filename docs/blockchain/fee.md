@@ -18,7 +18,7 @@ u:=vacancy coefficient
 
 p:=punishment for over-usage coefficient
 
-$$Quota_{DSM} = max(MPS_{max}, MPS_{total}^{current}) * 80\%$$
+`$$Quota_{DSM} = max(MPS_{max}, MPS_{total}^{current}) * 80\%$$`
 
 $$bandwidth_{app1}=\frac{LS_{app1}}{LS_{all apps}}*Quota_{DSM}$$
 
