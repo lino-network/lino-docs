@@ -1,6 +1,5 @@
 module.exports = {
   title: 'Lino Documentation',
-  base: '/lino-docs/',
   themeConfig: {
     nav: [
       {
