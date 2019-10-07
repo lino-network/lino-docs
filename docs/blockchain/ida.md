@@ -12,13 +12,13 @@ An IDA has the following attributes:
 2. In-app usage only: An IDA cannot be used outside of the issuing App developer. Any IDA usage requires the signature of the issuing developer account or affiliated developer accounts.
 3. Donation only: Only the issuing developer and affiliated developer accounts can transfer IDA. App users can only donate IDA. For any IDA donation, the recipient will receive 90.1%, and the rest 9.9%will be automatically converted to LINO (the LINO comes from Reserve Pool, see below) based on the Consensus Rate of LINO (see below) and distributed to LINO Stake holders.
 
-### Consensus Rate of LINO
+## Consensus Rate of LINO
 
 The Consensus Rate of LINO is a weighted average of LINO prices reported by all validators of Lino blockchain.
 
 The validators will continuously update their LINO prices to the Lino blockchain.
 
-### Reserve Pool
+## Reserve Pool
 
 At the initiation of the Lino blockchain, the Reserve Pool contains 1 billion LINO, which is 10% of the total supply (10 billion). The Reserve Pool is an on-chain smart contract that is not controlled by any individual.
 
@@ -30,13 +30,13 @@ It operates based on the following rules:
 
 Stake holders.
 
-### Converting IDA Back To LINO
+## Converting IDA Back To LINO
 
 IDA can only be converted to LINO in the following two ways:
 
 1. Whenever a donation is transacted via any IDA, 9.9% of it will be converted to LINO automatically at the Consensus Rate of LINO and distributed to LINO Stake holders.
 2. When an IDA Conversion Proposal is approved, all the IDA, for example, LEMON (the IDA issued by @dlive), will be converted to LINO automatically at the Consensus Rate of LINO. Specifically, all LEMON will be destroyed, and the corresponding LINO will be deducted from the Reserve Pool and credited to the previous LEMON holders. This situation happens typically when the developer wants to destroy the IDA or the developer fails their users.
 
-### IDA Authorization
+## IDA Authorization
 
 Since the creation of IDA, the issuing developer in default has the access to donate and transfer the IDA from any account. A user can unauthorize an App to revoke the developer’s access to the user’s IDA. After unauthorization, the developer can no longer transfer or donate IDA on behalf of this user. However, the user does not have access to donate or transfer the IDA either. In this case, the user can only reauthorize or wait for the conversion proposal to be approved to convert the IDA to LINO.

@@ -16,7 +16,7 @@ module.exports = {
     sidebar: [
       {
         title: 'Overview', // 必要的
-        sidebarDepth: 3, // 可选的, 默认值是 1
+        sidebarDepth: 2, // 可选的, 默认值是 1
         children: [
           ['/overview/intro.html', 'Introduction'],
           ['/overview/ls.html', 'LINO Stake'],
@@ -25,29 +25,24 @@ module.exports = {
       },
       {
         title: 'Blockchain', // 必要的
-        sidebarDepth: 3, // 可选的, 默认值是 1
+        sidebarDepth: 2, // 可选的, 默认值是 1
         children: [
           ['/blockchain/account.html', 'Account'],
           ['/blockchain/ida.html', 'In-app Digital Asset(IDA))'],
           ['/blockchain/fee.html', 'Network Fee'],
+          ['/blockchain/ndn.html', 'Token-incentivized NDN'],
           ['/blockchain/governance.html', 'Governance']
         ]
       },
       {
-        title: 'Validator', // 必要的
+        title: 'Tutorial', // 必要的
         // sidebarDepth: 4, // 可选的, 默认值是 1,
         displayAllHeaders: true,
         children: [
-          ['/validator/introduction.html', 'Introduction'],
-          ['/validator/setup.html', 'Set Up A Validator']
-        ]
-      },
-      {
-        title: 'App Developer', // 必要的
-        // sidebarDepth: 4, // 可选的, 默认值是 1,
-        displayAllHeaders: true,
-        children: [
-          ['/developer/introduction.html', 'Introduction'],
+          ['/tutorial/install.html', 'Install Lino Core SDK'],
+          ['/tutorial/developer.html', 'Set Up An App Developer Account'],
+          ['/tutorial/validator.html', 'Set Up A Validator'],
+          ['/tutorial/msg.html', 'Message Types']
         ]
       },
       {
@@ -59,6 +54,6 @@ module.exports = {
         ]
       },
     ],
-    sidebarDepth: 3
+    sidebarDepth: 2
   },
 }
