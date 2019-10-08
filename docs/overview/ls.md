@@ -16,4 +16,8 @@ LS holders will be able to get **Voting Rewards** based on their contributions t
 
 ## Conversion
 
-LINO can be converted to LS instantly. However, it will take 12 weeks, called the Pending Period, to convert LS back to LINO completely. During the 12-week Pending Period, 1/12 LS will be converted to LINO at the end of each week.
+<p align="center" style="text-align: center;"><img align="center" src="../.vuepress/public/ls.jpg" /></p>
+
+**Stake In**: Stake In is the process of converting LINO to LS, which is instant.
+
+**Stake Out**: Stake Out is the process of converting LS to LINO. It takes 12 weeks, called the Pending Period, to convert LS back to LINO completely. During the 12-week Pending Period, 1/12 LS will be converted to LINO at the end of each week.

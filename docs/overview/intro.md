@@ -21,7 +21,7 @@ An App developer on Lino blockchain can issue its own fix-priced [IDA](about:bla
 
 ### Voting Rewards
 
-[LINO Stake](about:blank) holders are allowed to vote for [validator](about:blank) election as well as [governance proposals](about:blank), and receive [Voting Rewards](about:blank) in return. The Voting Rewards come from 9.9% of all consumptions on Lino blockchain.
+[LINO Stake](about:blank) holders vote on [validator](about:blank) election as well as [governance proposals](about:blank), and receive [Voting Rewards](about:blank) in return. The Voting Rewards come from 9.9% of all consumptions on Lino blockchain.
 
 ### Decentralized Ownership
 
@@ -30,10 +30,3 @@ LINO Stake is the proof of ownership of Lino blockchain. LINO Stake holders will
 ## Consensus Algorithm
 
 Lino blockchain is based on the Byzantine Fault Tolerance(BFT) based Proof-of-Stake(PoS) consensus algorithm, particularly the open source projects [Tendermint](https://tendermint.com/) and [Cosmos](https://cosmos.network/).
-
-
-## LaTeX
-
-The editor converts LaTeX equations in double-dollars `$$`: <img src="../.vuepress/public/latex1.svg" alt="ax2+bx+c=0" />. All equations are rendered as block equations. If you need inline ones, you can add the prefix `\inline`: <img src="https://tex.s2cms.ru/svg/%5Cinline%20p%3D%7B1%5Cover%20q%7D" alt="\inline p={1\over q}" />. But it is a good practice to place big equations on separate lines:
-
-<img src="https://tex.s2cms.ru/svg/x_%7B1%2C2%7D%20%3D%20%7B-b%5Cpm%5Csqrt%7Bb%5E2%20-%204ac%7D%20%5Cover%202a%7D." alt="x_{1,2} = {-b\pm\sqrt{b^2 - 4ac} \over 2a}." />
