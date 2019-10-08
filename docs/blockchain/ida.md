@@ -2,7 +2,7 @@
 
 Due to the volatile nature of cryptocurrencies, large price swings are inevitable and hence they are not optimal to be used for daily transactions. Just imagine: which content creator could accept the fact that the total income received in cryptocurrency last month may suddenly drop 20% in value? That’s why IDA is designed to be used for donations and gifting without worrying about price fluctuation. Moreover, IDA is superior to fiat currencies in the Lino model since it’s programmable and all related economic behaviors can be recorded onto the blockchain.
 
-![](https://lh4.googleusercontent.com/xW_dPpbD5_ATm0XKuHcO3_VqqRYF1RtRwyXPiIwgFr7EpOWXtLFRIlPlpM_kTPtDjQUryfFBtIjVdk6WtpgsP13sSZ81NfzpHxA_5DNL8ZwA7B6FzzLAeYKIKt9zjKIj2fFdjWZk)
+<p align="center" style="text-align: center;"><img align="center" src="../.vuepress/public/ida.jpg" /></p>
 
 Lino Apps are recommended to use IDA for better user experience. Lino App users will be able to purchase IDA at a fixed price. Any donation and paid subscription on the Lino App will be transacted via IDA.
 
