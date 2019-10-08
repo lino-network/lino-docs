@@ -1,6 +1,6 @@
 # LINO Stake(LS)
 
-Different from LINO, LS is designed for long-term supporters of the network. LS is a feature designed in the Lino blockchain whereby, by staking LINO into LS, holders can
+Different from LINO, LS is designed for long-term supporters of the network and is **non-transferrable**. LS is a feature designed in the Lino blockchain whereby, by staking LINO into LS, holders can
 
 1. participate in the [governance system](about) and propose and vote on parameter changes and system upgrade proposals.
 

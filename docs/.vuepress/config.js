@@ -25,7 +25,8 @@ module.exports = {
         children: [
           ['/overview/intro.html', 'Introduction'],
           ['/overview/ls.html', 'LINO Stake'],
-          ['/overview/block_rewards_distribution.html', 'Block Rewards Distribution']
+          ['/overview/block_rewards_distribution.html', 'Block Rewards Distribution'],
+          ['/overview/contributors.html', 'Contributors To Lino Blockchain']
         ]
       },
       {
@@ -54,11 +55,11 @@ module.exports = {
         ]
       },
       {
-        title: 'Lino Wallet FAQ', // 必要的
+        title: 'FAQ', // 必要的
         // sidebarDepth: 4, // 可选的, 默认值是 1,
         displayAllHeaders: true,
         children: [
-          ['/lino_wallet_faq/faq.html', 'FAQ'],
+          ['/faq/faq.html', 'Lino FAQ'],
         ]
       },
     ],
