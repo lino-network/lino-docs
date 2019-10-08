@@ -29,18 +29,27 @@ The **Total Votes** of a validator candidate is a sum of its own LS amount and t
 
 ### Committing Power
 
-The consensus algorithm requires each block must be signed and approved by over 2/3 **Committing Power**. A validator's Committing Power equals to its total votes(sum of its own LS amount and the votes received from LS holders). A standby validator's Committing Power is a constant 1. The probability of producing a block of anyone in the validator set is proportional to its Committing Power. That is to say, a standby validator has a very low chance to produce block.
+The consensus algorithm requires each block must be signed and approved by over 2/3 **Committing Power**. A validator's Committing Power equals to its total votes received from LS holders. A standby validator's Committing Power is a constant 1. The probability of producing a block of anyone in the validator set is proportional to its Committing Power. That is to say, a standby validator has a very low chance to produce block.
 
 ## LS Slash
 
 When a validator or a standby validator misbehaves, its LS may be slashed in the following circumstances:
 
 - Fail to sign/produce a certain amount of consecutive blocks
+    Every validator has a counter to indicate how many blocks it has missed, when this number
+    reach the limitation 600 the validator will be slashed 200 LINO and the counter will be
+    reset to 0. The counter will also be decreased one for each block this validator produced. 
 - Fail to update LINO price
+    Every validator need to update LINO price every 60 minutes, it will be slashed 10000 LINO
+    for each failed update.
+- Byzantine validator
+    If a validator try to double singing a block, it will be considered as Byzantine validator
+    and be slashed 1000 LINO.
+
 
 ### In Jail
 
-Whenever a validator or a standby validator's LS has been slashed or been kicked out from the validator set by a proposal, it will be automatically put in **Jail.** In Jail is a special status. When a validator or a standby validator is in jail, it can no longer produce block. There are two options available when in jail:
+Whenever a validator or a standby validator's LS has been slashed to the amount that less than the minimun LS requirement, or been considered as Byzantine validator or been kicked out by a proposal, it will be automatically put in **Jail.** In Jail is a special status. When a validator or a standby validator is in jail, it can no longer produce block. There are two options available when in jail:
 
 1. **Unregistration**: As described above, the pending period will be applied.
 2. **Get Out of The Jail**:
