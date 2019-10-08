@@ -49,6 +49,7 @@ Whenever a donation is transacted via any IDA, 9.9% of it will be converted to L
 IDA can only be converted to LINO in the following two ways:
 
 1. Whenever a donation is transacted via any IDA, 9.9% of it will be converted to LINO automatically at the Consensus Rate of LINO and distributed to LINO Stake holders.
+
 2. When an [IDA Conversion Proposal](about) is approved, all the IDA, for example, `LEMON` (the IDA issued by `@dlivetv`), will be converted to LINO automatically at the Consensus Rate of LINO. Specifically, all `LEMON` will be destroyed, and the corresponding LINO will be deducted from the Reserve Pool and credited to the previous `LEMON` holders. This situation happens typically when the developer wants to destroy the IDA or the developer fails their users.
 
 ## IDA Authorization
