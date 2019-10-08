@@ -30,3 +30,7 @@ LINO Stake is the proof of ownership of Lino blockchain. LINO Stake holders will
 ## Consensus Algorithm
 
 Lino blockchain is based on the Byzantine Fault Tolerance(BFT) based Proof-of-Stake(PoS) consensus algorithm, particularly the open source projects [Tendermint](https://tendermint.com/) and [Cosmos](https://cosmos.network/).
+
+## Blockchain Architecture
+
+<p align="center" style="text-align: center;"><img align="center" src="../.vuepress/public/architecture.jpg" /></p>

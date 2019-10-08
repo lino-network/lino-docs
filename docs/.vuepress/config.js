@@ -41,10 +41,10 @@ module.exports = {
         // sidebarDepth: 4, // 可选的, 默认值是 1,
         displayAllHeaders: true,
         children: [
-          ['/tutorial/install.html', 'Install Lino Core SDK'],
-          ['/tutorial/developer.html', 'Set Up An App Developer Account'],
-          ['/tutorial/validator.html', 'Set Up A Validator'],
-          ['/tutorial/msg.html', 'Message Types']
+          ['/tutorial/full_node.html', 'Set Up A Full Node'],
+          ['/tutorial/developer.html', 'Register An App Developer Account'],
+          ['/tutorial/validator.html', 'Register A Validator Account'],
+          ['/tutorial/api.html', 'Lino API']
         ]
       },
       {
