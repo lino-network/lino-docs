@@ -1,5 +1,11 @@
 module.exports = {
   title: 'Lino Documentation',
+  head: [
+    ['link', {
+      rel: "shortcut icon",
+      href: "/favicon.ico"
+    }],
+  ],
   themeConfig: {
     nav: [
       {
