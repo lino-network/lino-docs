@@ -15,9 +15,9 @@ There are 2 ways to register a Lino account:
 
 ## Reset
 
-After full registration, a user can reset the Primary Key or the Signing Key. The new Primary Key should be different from any existing Primary Keys associated with usernames.
+A user can reset the Primary Key or the Signing Key of a fully registered account. The new Primary Key should be different from any existing Primary Keys associated with usernames.
 
-- **Reset Sining Key**: The reset message should contain the new public Signing Key with one of the following two signatures:
+- **Reset Signing Key**: The reset message should contain the new public Signing Key with one of the following two signatures:
     - the private Primary Key
     - the current private Signing Key
 - **Reset Primary Key**: The reset transaction should contain the new public Primary Key with two signatures(The account address will be changed):
@@ -34,20 +34,22 @@ LINO is stored under account address, not username. Username can be regarded as 
 
 ## Account Type
 
-There are 4 types of accounts that are eligible for receiving newly minted LINO:
+### Foundation Account
 
-### **The Foundation Account**
+The foundation account is declared in the **Genesis File**. The Foundation Account is controlled by the ACE Protocol Foundation. Only the foundation account is able to send LINO to the Reserve Pool without minting any IDA.
 
-The foundation account is declared in the **Genesis File**. Only the foundation account is able to send LINO to the Reserve Pool without minting any IDA. All of the Infra Rewards will go to the foundation account, and the foundation account will distribute the the Infra Rewards to developer accounts.
+### App Developer Account
 
-### **Developer Account**
+App Developer accounts are eligible for receiving [Developer Rewards](about).
 
-Developer accounts are eligible for receiving Developer Rewards.
+### Content Creator Account
 
-### **Content Creator Account**
+Any Lino account becomes a Content Creator Account automatically after creating a post. Content Creator Accounts will receive [Content Rewards](about) based on the received donation.
 
-Any Lino account becomes a Content Creator Account automatically after creating a post. Content Creator Accounts will receive Content Rewards based on the received donation.
+### Validator Account
 
-### **Validator Account**
+Validator accounts are eligible for receiving [Validator Rewards](about), [message fees](about), and account registration fees.
 
-Validator accounts are eligible for receiving Validator Rewards, transaction fees, and registration fees.
+### Normal Account
+
+Any Lino Account is in default a normal account at its creation.

@@ -1,6 +1,6 @@
 # Msg fee
 
-There are 3 types of network fee models applying to different types of messages.
+There are 2 types of network fee models applying to different types of messages.
 
 ## Developer Signed Messages
 
@@ -30,23 +30,12 @@ $$bandwith\ consumption = \mu*p$$
 
 [Example: Quota_DSM=266](./Example-Quota_DSM-266-8da5a80c-261c-4341-a88f-730bc6b676b3.csv)
 
-
-
-## Vote Messages
-
-Vote messages are also exempt from any Tx fee.
-
-### Vote For Validator Candidates
-
-An LS holder can vote for at most 3 validators, and has to wait for at least 1 week to change or revoke any vote.
-
-### Vote For Proposals
-
-An LS holder can vote for any proposal for free. Votes for proposals cannot be altered.
-
 ## General Messages
 
-### Example: Quota_GM=66 (66 General Msg per second)
+### Example:
+
+**Quota_GM=66 (66 General Msg per second)**
+
 | EMA quota Usage | Msg fee |
 | --- | --- |
 | 0 | 0.025 LINO |
@@ -70,5 +59,3 @@ $$Quota_{GM} = max(MPS_{max}, MPS_{total}^{current}) * 20\%$$
 $$MPS_{GM}^{EMA} = MPS_{GM}^{EMA}*(1-k)+MPS_{GM}^{current}*k,\ k=\frac{1}{n}$$
 
 $$Fee_{GM} = exp(\frac{MPS_{GM}^{EMA}-Quota_{GM}}{Quota_{GM}} * 6) *10$$
-
-[Example: Quota_GM=66](./Example-Quota_GM-66-7676d1d3-9d3e-40d1-8f7f-95aba173897c.csv)

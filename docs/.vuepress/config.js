@@ -27,8 +27,11 @@ module.exports = {
         sidebarDepth: 2, // 可选的, 默认值是 1
         children: [
           ['/blockchain/account.html', 'Account'],
-          ['/blockchain/ida.html', 'In-app Digital Asset(IDA))'],
+          ['/blockchain/developer.html', 'App Developer'],
+          ['/blockchain/validator.html', 'Validator'],
+          ['/blockchain/ida.html', 'In-app Digital Asset(IDA)'],
           ['/blockchain/fee.html', 'Network Fee'],
+          ['/blockchain/pocv.html', 'Proof of Content Value'],
           ['/blockchain/ndn.html', 'Token-incentivized NDN'],
           ['/blockchain/governance.html', 'Governance']
         ]
