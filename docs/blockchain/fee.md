@@ -2,9 +2,13 @@
 
 A **Message** is a standard format of information on the Lino blockchain similar to a Bitcoin transaction. A **Transaction** can contain multiple Messages. In order to prevent spam and on-chain attack, Lino blockchain applies 2 types of network fees to different types of messages, **Developer Signed Messages**(DSM) and **General Messages**(GM).
 
-MPS_{max} (Maximum Messages Per Second) is an on-chain parameter that describes the maximum number of messages can be processed per second. It's initially set in the **Genesis File** and automatically updated whenever the actual MPS surpasses MPS_{max}.
+**Maximum Messages Per Second** (<img src="https://tex.s2cms.ru/svg/MPS_%7Bmax%7D" alt="\inline p={MPS_{max}}" />) is an on-chain parameter that describes the maximum number of messages can be processed per second. It's initially set in the **Genesis File** and automatically updated whenever the actual MPS surpasses <img src="https://tex.s2cms.ru/svg/MPS_%7Bmax%7D" alt="\inline p={MPS_{max}}" />.
 
 MPS Quotas are set for DSM and GM: <img src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D" alt="\inline p={Q_{dsm}}" /> and <img align="center" src="https://tex.s2cms.ru/svg/Q_%7Bgm%7D" alt="\inline p={Q_{gm}}" />. If the **EMA of DSM**(see below) surpasses <img src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D" alt="\inline p={Q_{dsm}}" />, the cost of each DSM will be significantly higher. Similarly, if the **EMA of GM**(see below) surpasses <img align="center" src="https://tex.s2cms.ru/svg/Q_%7Bgm%7D" alt="\inline p={Q_{gm}}" />, the cost of each GM will be significantly higher.
+
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D%3DMPS_%7Bmax%7D*0.8" alt="Q_{dsm}=MPS_{max}*0.8" /></p>
+
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/Q_%7Bgm%7D%3DMPS_%7Bmax%7D*0.2" alt="Q_{gm}=MPS_{max}*0.2" /></p>
 
 ## Developer Signed Messages(DSM)
 
@@ -12,7 +16,7 @@ It's counter-intuitive to charge a network fee for micro-donation or creating po
 
 ### Dynamic Bandwidth Model
 
-
+All App Developer Accounts share the MPS Quota for DSM <img src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D" alt="\inline p={Q_{dsm}}" />.
 
 $$MPS_{DSM}^{EMA}$$
 

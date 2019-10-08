@@ -1,4 +1,4 @@
-# Lino Account FAQ
+# Lino FAQ
 
 ## What is LINO?
 
@@ -42,7 +42,7 @@ Since Lino Wallet does not store any of the user credentials. We cannot recover 
 
 ## What is Recovery Phrase?
 
-The Recover Phrase is a user-friendly form of your private key. It's the ONLY way to recover your Lino account if you lose your password.
+The Recover Phrase is a 12-word mnemonic which is a user-friendly form of your private key. It's the ONLY way to recover your Lino account if you lose your password.
 
 ## What is IDA and its relationship with LINO?
 
