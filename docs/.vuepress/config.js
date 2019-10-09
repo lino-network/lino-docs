@@ -6,6 +6,9 @@ module.exports = {
       href: "/favicon.ico"
     }],
   ],
+  markdown: {
+    lineNumbers: true
+  },
   plugins: [
     [
       '@vuepress/google-analytics',
