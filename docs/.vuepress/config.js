@@ -6,6 +6,14 @@ module.exports = {
       href: "/favicon.ico"
     }],
   ],
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-126405334-7'
+      }
+    ]
+  ],
   themeConfig: {
     nav: [
       {
