@@ -1,4 +1,4 @@
-# Introduction
+# Validator
 
 **Validators** and **Standby Validators**, selected from **Validator Candidates**, are the block producers of the Lino blockchain.
 
@@ -8,7 +8,7 @@
 
 You can follow the [tutorial](about) to register a Validator Account.
 
-1. Stake in at least a minimum amount of 100,000 [LS](about)
+1. Stake in at least a minimum amount of 100,000 [LS](../overview/ls.html)
 2. Send a [validator candidate registration message](about) to the Lino blockchain
 
 After becoming a validator candidate, one can receive votes from LS holders and potentially be selected to the [Validator Set](validator.html#validator-set-validators-standby-validators).
@@ -40,22 +40,20 @@ When a validator or a standby validator misbehaves, its LS may be slashed in the
 - **Fail to sign/produce a certain amount of consecutive blocks**
 
     Every validator has a counter to record how many blocks it has missed. when this number reaches 600, the validator's LS will be slashed by 200 and the counter will be
-    reset to 0. The counter will also be decreased one for each block this validator produced.
+    reset to 0. The counter will also be decreased by 1 for each block this validator produced.
 
 - **Fail to update LINO price**
 
-    Every validator need to update LINO price every 60 minutes, it will be slashed 10000 LINO
-    for each failed update.
+    Every validator needs to continuously update LINO price to the blockchain up to every 60 minutes. Otherwise it will be slashed by 10,000 LS for each failed update.
 
 - **Byzantine validator**
 
-    If a validator try to double singing a block, it will be considered as Byzantine validator
-    and be slashed 1000 LINO.
+    If a validator tries to double sign a block, it will be considered as a Byzantine validator and be slashed by 1,000 LS.
 
 
 ### In Jail
 
-Whenever a validator or a standby validator's LS has been slashed to the amount that less than the minimun LS requirement, or been considered as Byzantine validator or been kicked out by a proposal, it will be automatically put in **Jail**. In Jail is a special status. When a validator or a standby validator is in jail, it can no longer produce block. There are two options available when in jail:
+Whenever a validator or a standby validator's LS has been slashed to the amount that less than the minimum LS requirement, or been considered as Byzantine validator or been kicked out by a proposal, it will be automatically put in **Jail**. In Jail is a special status. When a validator or a standby validator is in jail, it can no longer produce block. There are two options available when in jail:
 
 1. **Unregistration**: As described above, the pending period will be applied.
 2. **Get Out of The Jail**:

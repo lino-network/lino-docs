@@ -2,7 +2,7 @@
 
 ## App Developer Account
 
-App Developer Account is a special type of account on Lino blockchain. An App Developer Account can create a Lino App, issue [IDA](about), and receive [Developer Rewards](about).
+App Developer Account is a special type of account on Lino blockchain. An App Developer Account can create a Lino App, issue [IDA](../blockchain/ida.html), and receive [Lino App Rewards](../overview/contributors.html#app-developers).
 
 - **Registration**: By maintaining a minimum required amount(for developer) of LINO Stake, any Lino account can become a developer account by sending a developer registration transaction.
 
@@ -20,4 +20,4 @@ This is where Affiliated Account comes into play. An Affiliated Account is autho
 
 A user needs to create a **Post** on Lino blockchain to receive donations.
 
-Any user can create posts([message fees](about) will be applied), or alternatively, an Developer Account or an Affiliated Account can create posts on behalf of any user.
+Any user can create posts([message fees](../blockchain/fee.html#general-messages-gm) will be applied), or alternatively, an Developer Account or an Affiliated Account can create posts on behalf of any user.

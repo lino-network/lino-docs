@@ -40,15 +40,15 @@ The foundation account is declared in the **Genesis File**. The Foundation Accou
 
 ### App Developer Account
 
-App Developer accounts are eligible for receiving [Developer Rewards](about).
+App Developer accounts are eligible for receiving [Lino App Rewards](../overview/contributors.html#app-developers).
 
 ### Content Creator Account
 
-Any Lino account becomes a Content Creator Account automatically after creating a post. Content Creator Accounts will receive [Content Rewards](about) based on the received donation.
+Any Lino account becomes a Content Creator Account automatically after creating a post. Content Creator Accounts will receive [Content Rewards](../overview/contributors.html#content-creators) based on the received donation.
 
 ### Validator Account
 
-Validator accounts are eligible for receiving [Validator Rewards](about), [message fees](about), and account registration fees.
+Validator accounts are eligible for receiving [Validator Rewards](../overview/contributors.html#validators), [message fees](about), and account registration fees.
 
 ### Normal Account
 

@@ -10,7 +10,7 @@ Lino Blockchain relies on a set of validators to secure the network. The role of
 
 ## How to become Validator
 
-Running a validator requires a minimum amount of LINO Stake and technical skills. More details can be found [here](about:blank).
+Running a validator requires a minimum amount of LINO Stake and technical skills. More details can be found [here](../blockchain/validator.html).
 
 ## How to participate in Lino Blockchain governance system?
 
@@ -28,7 +28,7 @@ Content Rewards are issued by the Lino blockchain to the content creators on Lin
 
 ## How does the transaction fee work?
 
-Lino blockchain has a Hybrid Fee Model. All the in-app messages, such as donating IDA and creating posts, are free. However, all the wallet messages, such as transferring LINO, Staking in, Staking out, and Voting, are subject to fees. The specific amount of fee is based on the current number of messages in a block. In other words, the busier the blockchain, the higher the fee is. Normally, it won't cost more than 0.5 LINO. More details can be found [here](about:blank).
+Lino blockchain has a Hybrid Fee Model. All the in-app messages, such as donating IDA and creating posts, are free. However, all the wallet messages, such as transferring LINO, Staking in, Staking out, and Voting, are subject to fees. The specific amount of fee is based on the current number of messages in a block. In other words, the busier the blockchain, the higher the fee is. Normally, it won't cost more than 0.5 LINO. More details can be found [here](../blockchain/fee.html#general-messages-gm).
 
 ## Is my password or private key stored on the Lino Wallet server?
 
@@ -46,7 +46,7 @@ The Recover Phrase is a 12-word mnemonic which is a user-friendly form of your p
 
 ## What is IDA and its relationship with LINO?
 
-IDA, or In-app Digital Asset, is a Lino App developer issued coin, that can be used only on that Lino App. 9.9% of any donation in IDA will be automatically converted to LINO and distributed to LINO Stake holders as Voting Rewards. More details can be found [here](about:blank).
+IDA, or In-app Digital Asset, is a Lino App developer issued coin, that can be used only on that Lino App. 9.9% of any donation in IDA will be automatically converted to LINO and distributed to LINO Stake holders as Voting Rewards. More details can be found [here](../blockchain/ida.html).
 
 ## When will Lino Blockchain go main net?
 

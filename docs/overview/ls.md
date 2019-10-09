@@ -2,11 +2,11 @@
 
 Different from LINO, LS is designed for long-term supporters of the network and is **non-transferrable**. LS is a feature designed in the Lino blockchain whereby, by staking LINO into LS, holders can
 
-1. participate in the [governance system](about) and propose and vote on parameter changes and system upgrade proposals.
+1. participate in the [governance system](../blockchain/governance.html) and propose and vote on parameter changes and system upgrade proposals.
 
-2. vote on [validator election](about).
+2. vote on [validator election](../blockchain/validator.html).
 
-3. become an [App developer](about), or a [validator](about).
+3. become an [App developer](../blockchain/developer.html), or a [validator](../blockchain/validator.html).
 
 The ownership of the Lino blockchain is expected to become more decentralized as more people hold LS. Major decisions will be voted on by LS holders under the governance system.
 

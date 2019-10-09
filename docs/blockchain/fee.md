@@ -12,7 +12,7 @@ MPS Quotas are set for DSM and GM: <img src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7
 
 ## Developer Signed Messages(DSM)
 
-It's counter-intuitive to charge a network fee for micro-donation or creating posts. Network fee also discourages users to donate or create content. In order to provide a user-friendly experience, we use the **Dynamic Bandwidth Model** for all the developer signed messages, i.e., messages signed by [App Developer Account](about) or [Affiliated Account](about). In other words, all developer signed messages are free, costing no network fees.
+It's counter-intuitive to charge a network fee for micro-donation or creating posts. Network fee also discourages users to donate or create content. In order to provide a user-friendly experience, we use the **Dynamic Bandwidth Model** for all the developer signed messages, i.e., messages signed by [App Developer Account](../blockchain/developer.html) or [Affiliated Account](../blockchain/developer.html#affiliated-account). In other words, all developer signed messages are free, costing no network fees.
 
 ### Bandwidth
 
@@ -57,7 +57,7 @@ The bandwidth consumption of each DSM sent by `@app` (<img src="https://tex.s2cm
 
 ## General Messages(GM)
 
-Any message that is not signed by an [App Developer Account](about) or [Affiliated Account](about) is a General Message. Lino blockchain charges a **Message Fee** for sending General Messages. [Validators](about) collect messages fees as compensation for validating and processing General Messages. The busier the Lino blockchain, the higher the message fee is.
+Any message that is not signed by an [App Developer Account](../blockchain/developer.html#app-developer-account) or [Affiliated Account](../blockchain/developer.html#affiliated-account) is a General Message. Lino blockchain charges a **Message Fee** for sending General Messages. [Validators](../blockchain/validator.html) collect messages fees as compensation for validating and processing General Messages. The busier the Lino blockchain, the higher the message fee is.
 
 **Current MPS of GM** (<img src="https://tex.s2cms.ru/svg/MPS_%7Bgm%7D" alt="\inline p={MPS_{gm}}" />) is the current number of GM per second. It can be simply calculated based on the number of GM in the current block and the block time. For example, if the current block contains 30 GM, the Current MPS of GM should be 10(based on a 3-second block time).
 
