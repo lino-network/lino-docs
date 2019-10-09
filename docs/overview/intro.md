@@ -9,19 +9,19 @@ LINO is the fundamental unit of value on Lino blockchain. Lino blockchain is des
 
 ### Earn LINO While Watching on Lino Apps
 
-Leveraging the [token-incentivized NDN](../lino_wallet_faq/faq.html#what-are-validators-and-what-do-they-do), viewers can utilize their idle network bandwidth and computing resources to provide infrastructure to Lino blockchain while earning LINO as rewards at the same time. In other words, viewers will be able to earn while watching on Lino Apps.
+Leveraging the [token-incentivized NDN](../blockchain/ndn.html), viewers can utilize their idle network bandwidth and computing resources to provide infrastructure to Lino blockchain while earning LINO as rewards at the same time. In other words, viewers will be able to earn while watching on Lino Apps.
 
 ### No Platform Cut
 
-Apps utilizing the Lino blockchain do not take any cuts from direct payments between viewers and content creators. 90.1% of any consumption(donation, paid subscription, and etc) will directly go to content creators, while the rest 9.9% will rewards [LINO Stake](about:blank) holders for voting.
+Apps utilizing the Lino blockchain do not take any cuts from direct payments between viewers and content creators. 90.1% of any consumption(donation, paid subscription, and etc) will directly go to content creators, while the rest 9.9% will rewards [LINO Stake](../overview/ls.html) holders for voting.
 
 ### In-app Digital Asset (IDA)
 
-An App developer on Lino blockchain can issue its own fix-priced [IDA](about:blank) that can be used within that app only. IDA, for the first time, makes blockchain-based applications more user-friendly to non-crypto users.
+An App developer on Lino blockchain can issue its own fix-priced [IDA](../blockchain/ida.html) that can be used within that app only. IDA, for the first time, makes blockchain-based applications more user-friendly to non-crypto users.
 
 ### Voting Rewards
 
-[LINO Stake](about:blank) holders vote on [validator](about:blank) election as well as [governance proposals](about:blank), and receive [Voting Rewards](about:blank) in return. The Voting Rewards come from 9.9% of all consumptions on Lino blockchain.
+[LINO Stake](../overview/ls.html) holders vote on [validator](../blockchain/validator.html) election as well as [governance proposals](../blockchain/governance.html), and receive [Voting Rewards](../overview/ls.html#voting-rewards) in return. The Voting Rewards come from 9.9% of all consumptions on Lino blockchain.
 
 ### Decentralized Ownership
 

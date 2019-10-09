@@ -24,7 +24,7 @@ Only the issuing developer and affiliated developer accounts can transfer IDA. A
 
 The Consensus Rate of LINO is calculated on-chain based on LINO prices reported by all [validators](about) of Lino blockchain.
 
-Specifically, the validators will continuously update their LINO prices to the Lino blockchain. The validators can pull the LINO price data directly from exchanges or other reliable sources. Lino blockchain will compute a **weighted median** of LINO prices, called a **Price Point**, reported by all validators based on their [Committing Powers](about) every hour. The weighted median can guarantee the accuracy of Price Point will be maintained even if there are few outliers.
+Specifically, the validators will continuously update their LINO prices to the Lino blockchain. The validators can pull the LINO price data directly from exchanges or other reliable sources. Lino blockchain will compute a **weighted median** of LINO prices, called a **Price Point**, reported by all validators based on their [Committing Powers](../blockchain/validator.html#committing-power) every hour. The weighted median can guarantee the accuracy of Price Point will be maintained even if there are few outliers.
 
 The Consensus Rate of LINO, that is updated very hour, is the **median** of the last 36 Price Points.
 
