@@ -28,11 +28,11 @@ module.exports = {
         link: 'https://account.lino.network'
       },
     ],
-    repo: 'lino-network/lino-docs',
+    repo: 'lino-network/lino',
     sidebar: [
       {
-        title: 'Overview', // 必要的
-        sidebarDepth: 2, // 可选的, 默认值是 1
+        title: 'Overview',
+        sidebarDepth: 2,
         children: [
           ['/overview/intro.html', 'Introduction'],
           ['/overview/ls.html', 'LINO Stake'],
@@ -41,8 +41,8 @@ module.exports = {
         ]
       },
       {
-        title: 'Blockchain', // 必要的
-        sidebarDepth: 2, // 可选的, 默认值是 1
+        title: 'Blockchain',
+        sidebarDepth: 2,
         children: [
           ['/blockchain/account.html', 'Account'],
           ['/blockchain/developer.html', 'App Developer'],
@@ -55,8 +55,7 @@ module.exports = {
         ]
       },
       {
-        title: 'Tutorial', // 必要的
-        // sidebarDepth: 4, // 可选的, 默认值是 1,
+        title: 'Tutorial',
         displayAllHeaders: true,
         children: [
           ['/tutorial/full_node.html', 'Set Up A Full Node'],
@@ -66,8 +65,7 @@ module.exports = {
         ]
       },
       {
-        title: 'FAQ', // 必要的
-        // sidebarDepth: 4, // 可选的, 默认值是 1,
+        title: 'FAQ',
         displayAllHeaders: true,
         children: [
           ['/faq/faq.html', 'Lino FAQ'],
