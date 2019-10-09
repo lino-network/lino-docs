@@ -14,7 +14,7 @@ If you want to run a non-validator full-node, installing the Lino Core on a Clou
 
 **MacOS**
 
-```
+```bash
 brew install wget
 ```
 
