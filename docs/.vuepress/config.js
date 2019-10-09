@@ -26,7 +26,7 @@ module.exports = {
           ['/overview/intro.html', 'Introduction'],
           ['/overview/ls.html', 'LINO Stake'],
           ['/overview/block_rewards_distribution.html', 'Block Rewards Distribution'],
-          ['/overview/contributors.html', 'Contributors To Lino Blockchain']
+          ['/overview/contributors.html', 'Blockchain Contributors']
         ]
       },
       {
