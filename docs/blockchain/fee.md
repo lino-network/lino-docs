@@ -18,7 +18,7 @@ It's counter-intuitive to charge a network fee for micro-donation or creating po
 
 Each DSM sent by an App Developer Account (`@app`) will consume a certain amount of bandwidth (<img src="https://tex.s2cms.ru/svg/C_%7Bdsm%7D%5E%7Bapp%7D" alt="C_{dsm}^{app}" />).
 
-All App Developer Accounts share the MPS Quota for DSM (<img src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D" alt="\inline p={Q_{dsm}}" />). The MPS quota allocated to each App Developer Account (<img src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D%5E%7Bapp%7D" alt="\inline p={Q_{dsm}^{app}}" />) is proportional to the App Developer Account's LS. For example, if `@app` has 1,000,000 LS while all App Developer Accounts have 2,000,000 LS in total, `@app`'s bandwidth should be:
+All App Developer Accounts share the MPS Quota for DSM (<img src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D" alt="\inline p={Q_{dsm}}" />). The MPS quota allocated to each App Developer Account (<img src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D%5E%7Bapp%7D" alt="\inline p={Q_{dsm}^{app}}" />) is proportional to the App Developer Account's LS. For example, if `@app` has 1,000,000 LS while all App Developer Accounts have 2,000,000 LS in total, `@app`'s allocated MPS Quota should be:
 
 <p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D%5E%7Bapp%7D%20%3D%20Q_%7Bdsm%7D*%5Cfrac%7B1%2C000%2C000%7D%7B2%2C000%2C000%7D%3D%5Cfrac%7B1%7D%7B2%7DQ_%7Bdsm%7D" alt="Q_{dsm}^{app} = Q_{dsm}*\frac{1,000,000}{2,000,000}=\frac{1}{2}Q_{dsm}" /></p>
 

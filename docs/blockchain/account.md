@@ -10,8 +10,8 @@ A fully functional Lino account is comprised of 3 elements:
 
 There are 2 ways to register a Lino account:
 
-1. **Full Registration**: Sending a message containing an unregistered username and public Primary Key signed by the corresponding private Primary Key to the Lino Blockchain. Optionally, this message can contain a public Signing Key to associate it with this account. Full registration requires paying a registration fee(to the validators), and Tx fee is applied as well.
-2. **Cold Wallet**: Similar to Bitcoin, a Lino account address can be generated without paying registration fee. Users can generate a Primary Key offline, and receive and send LINO using the account address as the identifier. In order to send any other types of messages, the user needs to associate a username with this address(registration fee will be applied).
+1. **Full Registration**: Sending a message containing an unregistered username and public Primary Key signed by the corresponding private Primary Key to the Lino Blockchain. Optionally, this message can contain a public Signing Key to associate it with this account. Full registration requires paying a registration fee(to the validators), and a [message fee](../fee.html#general-messages-gm) will be applied as well.
+2. **Cold Wallet**: Similar to Bitcoin, a Lino account address can be generated without paying registration fee. Users can generate a Primary Key offline, and receive and send LINO using the account address as the identifier. In order to send any other types of messages, the user needs to associate a username with this Lino account address(registration fee will be applied).
 
 ## Reset
 
@@ -20,6 +20,7 @@ A user can reset the Primary Key or the Signing Key of a fully registered accoun
 - **Reset Signing Key**: The reset message should contain the new public Signing Key with one of the following two signatures:
     - the private Primary Key
     - the current private Signing Key
+
 - **Reset Primary Key**: The reset transaction should contain the new public Primary Key with two signatures(The account address will be changed):
     - the current private Primary Key
     - the new private Primary Key
@@ -40,7 +41,7 @@ The foundation account is declared in the **Genesis File**. The Foundation Accou
 
 ### App Developer Account
 
-App Developer accounts are eligible for receiving [Lino App Rewards](../overview/contributors.html#app-developers).
+[App Developer Accounts](/blockchain/developer.html#app-developer-account) are eligible for receiving [Lino App Rewards](../overview/contributors.html#app-developers).
 
 ### Content Creator Account
 
@@ -48,7 +49,7 @@ Any Lino account becomes a Content Creator Account automatically after creating 
 
 ### Validator Account
 
-Validator accounts are eligible for receiving [Validator Rewards](../overview/contributors.html#validators), [message fees](about), and account registration fees.
+[Validator accounts](/blockchain/validator.html#validator-candidate) are eligible for receiving [Validator Rewards](../overview/contributors.html#validators), [message fees](about), and account registration fees.
 
 ### Normal Account
 

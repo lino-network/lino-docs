@@ -1,19 +1,7 @@
-* [JSON RPC API](#JSON-RPC-API)  
-* [JavaScript API](#JavaScript-API)
-* [JSON-RPC Endpoint](#JSON-RPC-Endpoint)
-* [JSON-RPC API Reference](#JSON-RPC-API-Reference)
-    * [Blockchain Status](#Blockchain-Status)
-    * [Block Info](#Block-Info)
-    * [Tx Info](#Tx-Info)
-    * [Account Info](#Account-Info)
-    * [Account Bank](#Account-Bank)
-    * [Post Info](#Post-Info)
-    * [Stake Info](#Stake-Info)
-    * [Validator Info](#Validator-Info)
-
 # JSON RPC API
+
 ## JavaScript API
-To talk to an Lino node from inside a JavaScript application use the [lino-js](https://github.com/lino-network/lino-js) library, which gives a convenient interface for the RPC methods. See the  [lino-js](https://github.com/lino-network/lino-js) library for more.
+To talk to a Lino node from inside a JavaScript application use the [lino-js](https://github.com/lino-network/lino-js) library, which gives a convenient interface for the RPC methods. See the  [lino-js](https://github.com/lino-network/lino-js) library for more.
 
 ## JSON-RPC Endpoint
 Default JSON-RPC endpoints: https://fullnode.lino.network/
@@ -29,7 +17,7 @@ none
 String - Current blockchain status.
 
 #### Example
-```
+```json
 // Request
 $ curl -X POST --data-binary '{"jsonrpc":"2.0","method":"status"}' "https://fullnode.lino.network"
 
@@ -84,7 +72,7 @@ Returns block information for a specific block. Including block meta and all tra
 String - Block information.
 
 #### Example
-```
+```json
 // Request
 $ curl -X POST --data-binary '{"jsonrpc":"2.0","method":"block", "params":{"height":"1"}}' "https://fullnode.lino.network" -s 'https://fullnode.lino.network/status'
 
@@ -178,7 +166,7 @@ $ curl -X POST --data-binary '{"jsonrpc":"2.0","method":"block", "params":{"heig
 }
 ```
 To parse a transaction in the block:
-```
+```json
 // Request
 $ curl -X POST --data-binary '{"jsonrpc":"2.0","method":"block", "params":{"height":"20000"}}' "https://fullnode.lino.network" | jq -r .result.block.data.txs[0] | base64 -d
 
@@ -241,7 +229,7 @@ Returns a specific transaction status and execution result.
 String - Tx information.
 
 #### Example
-```
+```json
 // Request
 $  curl -X POST --data-binary '{"jsonrpc":"2.0","method":"tx", "params":{"hash":"3fTjLeArr8uLbRYxL6zJiRRhvpp+NX9FSqLAgdAY+9A="}}' "https://fullnode.lino.network"
 
@@ -274,7 +262,7 @@ $  curl -X POST --data-binary '{"jsonrpc":"2.0","method":"tx", "params":{"hash":
 ```
 
 Transaction hash can be parsed by following steps
-```
+```json
 // Request
 $ curl -X POST --data-binary '{"jsonrpc":"2.0","id":"jsonrpc-client","method":"block", "params":{"height":"237788"}}' "https://fullnode.lino.network" | jq -r .result.block.data.txs[0] | base64 -d | sha256sum | xxd -r -p | base64
 
@@ -293,7 +281,7 @@ Returns a specific user's account information.
 String - Account information, which includes username, create time in unix, public keys and address. Address can be derived from transaction public key.
 
 #### Example
-```
+```json
 // Request, username is `ytu`
 $ curl -X POST --data-binary '{"jsonrpc":"2.0","method":"abci_query","params":{"height":"0","trusted":false,"path":"/custom/account/info/ytu","data":""}}' "https://fullnode.lino.network" | jq -r .result.response.value | base64 -d | jq .
 
@@ -323,7 +311,7 @@ Returns a specific user's bank information.
 String - Bank information, which includes bank balance (in Lino Coin, 1 LINO = 100000 Lino Coin), frozen money list (pending Lino), public key (same as transaction public key above), sequence number and username.
 
 #### Example
-```
+```json
 // Request, username is `ytu`
 $ curl -X POST --data-binary '{"jsonrpc":"2.0","method":"abci_query","params":{"height":"0","trusted":false,"path":"/custom/account/bank/ytu","data":""}}' "https://fullnode.lino.network" | jq -r .result.response.value | base64 -d | jq .
 
@@ -341,7 +329,7 @@ $ curl -X POST --data-binary '{"jsonrpc":"2.0","method":"abci_query","params":{"
       "times": "12",
       "interval": "604800"
     },
-    
+
   ],
   "public_key": {
     "type": "tendermint/PubKeySecp256k1",
@@ -363,7 +351,7 @@ Returns a specific post's information.
 String - Post information, which includes author, post id, title, content, create time, etc.
 
 #### Example
-```
+```json
 // Request, permlink is `pika35#VxWqSm2Wg`
 $  curl -X POST --data-binary '{"jsonrpc":"2.0","method":"abci_query","params":{"height":"0","trusted":false,"path":"/custom/post/info/pika35#VxWqSm2Wg","data":""}}' "https://fullnode.lino.network" | jq -r .result.response.value | base64 -d | jq .
 
@@ -391,7 +379,7 @@ Returns a user's stake information.
 String - Stake information, which includes total Lino stake (in Lino Coin, 1 LINO = 100000 Lino Coin), delegation info (ytu 09/29/2019: deprecated in next update), duty and frozen amount (ytu 09/29/2019: enable in next update).
 
 #### Example
-```
+```json
 // Request, username is `dlivetv`
 $  curl -X POST --data-binary '{"jsonrpc":"2.0","method":"abci_query","params":{"height":"0","trusted":false,"path":"/custom/vote/voter/dlivetv","data":""}}' "https://fullnode.lino.network" | jq -r .result.response.value | base64 -d | jq .
 
@@ -428,7 +416,7 @@ Returns a user's stake information.
 String - Stake information, which includes total Lino stake (in Lino Coin, 1 LINO = 100000 Lino Coin), delegation info (ytu 09/29/2019: deprecated in next update), duty and frozen amount (ytu 09/29/2019: enable in next update).
 
 #### Example
-```
+```json
 // Request, username is `dlivetv`
 $  curl -X POST --data-binary '{"jsonrpc":"2.0","method":"abci_query","params":{"height":"0","trusted":false,"path":"/custom/vote/voter/dlivetv","data":""}}' "https://fullnode.lino.network" | jq -r .result.response.value | base64 -d | jq .
 
@@ -465,7 +453,7 @@ Returns a validator's information.
 String - Validator information, which number of poduced blocks, deposit (ytu 09/29/2019: deprecated in next update), public key, commit power, etc.
 
 #### Example
-```
+```json
 // Request, username is `validator1`
 $ curl -X POST --data-binary '{"jsonrpc":"2.0","method":"abci_query","params":{"height":"0","trusted":false,"path":"/custom/validator/validator/validator1","data":""}}' "https://fullnode.lino.network" | jq -r .result.response.value | base64 -d | jq .
 
