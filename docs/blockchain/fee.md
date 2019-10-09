@@ -14,33 +14,46 @@ MPS Quotas are set for DSM and GM: <img src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7
 
 It's counter-intuitive to charge a network fee for micro-donation or creating posts. Network fee also discourages users to donate or create content. In order to provide a user-friendly experience, we use the **Dynamic Bandwidth Model** for all the developer signed messages, i.e., messages signed by [App Developer Account](about) or [Affiliated Account](about). In other words, all developer signed messages are free, costing no network fees.
 
-### Dynamic Bandwidth Model
+### Bandwidth
 
-All App Developer Accounts share the MPS Quota for DSM <img src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D" alt="\inline p={Q_{dsm}}" />.
+Each DSM sent by an App Developer Account (`@app`) will consume a certain amount of bandwidth (<img src="https://tex.s2cms.ru/svg/C_%7Bdsm%7D%5E%7Bapp%7D" alt="C_{dsm}^{app}" />).
 
-$$MPS_{DSM}^{EMA}$$
+All App Developer Accounts share the MPS Quota for DSM (<img src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D" alt="\inline p={Q_{dsm}}" />). The MPS quota allocated to each App Developer Account (<img src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D%5E%7Bapp%7D" alt="\inline p={Q_{dsm}^{app}}" />) is proportional to the App Developer Account's LS. For example, if `@app` has 1,000,000 LS while all App Developer Accounts have 2,000,000 LS in total, `@app`'s bandwidth should be:
 
-the exponential moving average number of developer signed messages per second of all past blocks
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D%5E%7Bapp%7D%20%3D%20Q_%7Bdsm%7D*%5Cfrac%7B1%2C000%2C000%7D%7B2%2C000%2C000%7D%3D%5Cfrac%7B1%7D%7B2%7DQ_%7Bdsm%7D" alt="Q_{dsm}^{app} = Q_{dsm}*\frac{1,000,000}{2,000,000}=\frac{1}{2}Q_{dsm}" /></p>
 
-bandwidth_app1:=bandwidth quota allocated to app1
+An App Developer Account's **bandwidth** (<img src="https://tex.s2cms.ru/svg/B_%7Bapp%7D" alt="\inline p={B_{app}}" />) is replenished at the speed of its allocated MPS quota (<img src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D" alt="\inline p={Q_{dsm}}" />) per second. <img src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D%5E%7Bapp%7D" alt="\inline p={Q_{dsm}^{app}}" /> has a hard limit that cannot exceed 50 times of <img src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D%5E%7Bapp%7D" alt="\inline p={Q_{dsm}^{app}}" />. An App Developer Account cannot send any message if its <img src="https://tex.s2cms.ru/svg/B_%7Bapp%7D" alt="\inline p={B_{app}}" /> is less than 0.
 
-u:=vacancy coefficient
+### Bandwidth Consumption
 
-p:=punishment for over-usage coefficient
+**EMA of DSM** (<img src="https://tex.s2cms.ru/svg/EMA_%7Bdsm%7D" alt="\inline p={EMA_{gm}}" />) is the **exponential moving average** number of DSM per second.
 
-`$$Quota_{DSM} = max(MPS_{max}, MPS_{total}^{current}) * 80\%$$`
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/EMA_%7Bdsm%7D%20%3D%20EMA_%7Bdsm%7D*(1-k)%2BMPS_%7Bdsm%7D*k%2C%5C%20k%3D%5Cfrac%7B1%7D%7Bn%7D" alt="EMA_{gm} = EMA_{gm}*(1-k)+MPS_{gm}*k,\ k=\frac{1}{n}" /></p>
 
-$$bandwidth_{app1}=\frac{LS_{app1}}{LS_{all apps}}*Quota_{DSM}$$
 
-$$\mu=exp(\frac{MPS_{DSM}^{EMA}-Quota_{DSM}}{Quota_{DSM}} * 0.69)$$
 
-$$p=exp(\frac{max(MPS_{app1}^{current}-bandwidth_{app1},0)}{bandwidth_{app1}}*\frac{14}{5})$$
+When <img src="https://tex.s2cms.ru/svg/EMA_%7Bdsm%7D" alt="\inline p={EMA_{gm}}" /> is low, each DSM should just consume a small amount of bandwidth. The **Utilization Coefficient** (<img src="https://tex.s2cms.ru/svg/%5Cmu" alt="\inline p={\mu}" />) is a parameter that describes how busy the blockchain is:
 
-$$bandwith\ consumption = \mu*p$$
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%5Cmu%3Dexp(%5Cfrac%7BEMA_%7Bdsm%7D-Q_%7Bdsm%7D%7D%7BQ_%7Bdsm%7D%7D%20*%200.69)" alt="\mu=exp(\frac{EMA_{dsm}-Q_{dsm}}{Q_{dsm}} * 0.69)" /></p>
 
-[Example: Quota_DSM=266](./Example-Quota_DSM-266-8da5a80c-261c-4341-a88f-730bc6b676b3.csv)
+**Current MPS of DSM of an App** (<img src="https://tex.s2cms.ru/svg/MPS_%7Bdsm%7D%5E%7Bapp%7D" alt="\inline p={MPS_{dsm}^{app}}" />) is the current number of DSM sent by `@app` per second. It can be simply calculated based on the number of DSM sent by `@app` in the current block and the block time. For example, if the current block contains 300 DSM sent by `@app`, the Current MPS of DSM of `@app` should be 100(based on a 3-second block time).
+
+When <img src="https://tex.s2cms.ru/svg/MPS_%7Bdsm%7D%5E%7Bapp%7D" alt="\inline p={MPS_{dsm}^{app}}" /> is high, each DSM should consume a larger amount of bandwidth. The **App Utilization Coefficient** (<img src="https://tex.s2cms.ru/svg/U_%7Bapp%7D" alt="\inline p={U_{app}}" />) for each App Developer Account is a parameter that describes how much the allocated bandwidth is consumed by this App Developer Account:
+
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/U_%7Bapp%7D%3Dexp(%5Cfrac%7Bmax(MPS_%7Bdsm%7D%5E%7Bapp%7D-Q_%7Bdsm%7D%5E%7Bapp%7D%2C0)%7D%7BQ_%7Bdsm%7D%5E%7Bapp%7D%7D*%5Cfrac%7B14%7D%7B5%7D)" alt="U_{app}=exp(\frac{max(MPS_{dsm}^{app}-Q_{dsm}^{app},0)}{Q_{dsm}^{app}}*\frac{14}{5})" /></p>
+
+The bandwidth consumption of each DSM sent by `@app` (<img src="https://tex.s2cms.ru/svg/C_%7Bdsm%7D%5E%7Bapp%7D" alt="C_{dsm}^{app}" />) is simply the multiple of two coefficients:
+
+<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/C_%7Bdsm%7D%5E%7Bapp%7D%3D%5Cmu*U%7Bapp%7D" alt="C_{dsm}^{app}=\mu*U{app}" /></p>
 
 ### Example
+
+<p><img align="center" src="https://tex.s2cms.ru/svg/Q_%7Bdsm%7D%3D266" alt="\inline p={Q_{dsm}=66}" /></p>
+
+| <img src="https://tex.s2cms.ru/svg/%5Cmu" alt="\inline p={\mu}" /> | <img src="https://tex.s2cms.ru/svg/MPS_%7Bdsm%7D%5E%7Bapp%7D%2FQ_%7Bdsm%7D%5E%7Bapp%7D" alt="\inline p={MPS_{dsm}^{app}/Q_{dsm}^{app}}" /> | <img src="https://tex.s2cms.ru/svg/C_%7Bdsm%7D%5E%7Bapp%7D" alt="C_{dsm}^{app}" /> |
+| --- | --- | --- |
+| 0.5 | 125% | 1 |
+| 0.5 | 100% | 0.5 |
 
 ## General Messages(GM)
 
