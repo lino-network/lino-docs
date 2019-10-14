@@ -61,8 +61,9 @@ module.exports = {
         children: [
           ['/tutorial/full_node.html', 'Set Up A Full Node'],
           ['/tutorial/developer.html', 'Register An App Developer Account'],
-          ['/tutorial/validator.html', 'Register A Validator Account'],
-          ['/tutorial/api.html', 'Lino API']
+          ['/tutorial/validator.html', 'Set Up A Validator'],
+          ['/tutorial/rpc.html', 'JSON RPC'],
+          ['/tutorial/sdk.html', 'Lino SDK']
         ]
       },
       {

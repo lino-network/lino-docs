@@ -1,4 +1,4 @@
-# Join as Validator
+# Join As A Validator
 
 To be a validator, you should first be a voter with 200000 locked LINO Points and have 200000 more Lino Points in balance. Then run a full node with public access IP and sync to current height. You can check current height on [tracker](https://tracker.lino.network/#/). To check your node's height you can access http://<your node's IP>:26657/status. Once your node sync with the latest height, you can run cli on your fullnode:
 ```bash
