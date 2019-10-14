@@ -13,7 +13,7 @@ Leveraging the [token-incentivized NDN](../blockchain/ndn.html), viewers can uti
 
 ### No Platform Cut
 
-Apps utilizing the Lino blockchain do not take any cuts from direct payments between viewers and content creators. 90.1% of any consumption(donation, paid subscription, and etc) will directly go to content creators, while the rest 9.9% will rewards [LINO Stake](../overview/ls.html) holders for voting.
+Apps utilizing the Lino blockchain do not take any cuts from direct payments between viewers and content creators. 90.1% of any consumption(donation, paid subscription, and etc) will directly go to content creators, while the rest 9.9% will reward [LINO Stake](../overview/ls.html) holders for voting.
 
 ### In-app Digital Asset (IDA)
 
