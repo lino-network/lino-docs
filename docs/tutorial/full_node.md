@@ -1,12 +1,12 @@
 # Set Up Fullnode And Connect to Testnet
 
-This document explains how to connect to the Testnet of the Lino Blockchain.
+This document explains how to set up a fullnode and connect to the Testnet of the Lino Blockchain.
 
 NOTE: We are aware that this documentation is sub-par and we are actively working on improving both the tooling and the documentation to make this setup process as smooth as possible. In the meantime, join us on [Discord](https://discord.gg/TUxp3ww) for technical support.
 
 ## Software Setup (Manual Installation)
 
-Follow the steps below to install [Lino Core](https://github.com/lino-network/lino) and connect to Testnet. This instruction works for both a local machine and a VM on a cloud server. Lino Core is based on [Cosmos SDK](https://github.com/cosmos/cosmos-sdk), and the setup process is similar.
+These instructions are for setting up a brand new full node from scratch. Follow the steps below to install [Lino Core](https://github.com/lino-network/lino) and connect to Testnet. This instruction works for both a local machine and a VM on a cloud server. Lino Core is based on [Cosmos SDK](https://github.com/cosmos/cosmos-sdk), and the setup process is similar.
 
 If you want to run a non-validator full node, installing the Lino Core on a Cloud server should be a good option. However, if you want to run a validator, you should first learn more about [Sentry Node Architecture](https://github.com/cosmos/cosmos/blob/master/VALIDATORS_FAQ.md#how-can-validators-protect-themselves-from-denial-of-service-attacks) to protect your validator from DDoS attacks and ensure a high availability (see the [technical requirements](https://github.com/cosmos/cosmos/blob/master/VALIDATORS_FAQ.md#technical-requirements)).
 
@@ -33,7 +33,6 @@ To install `go`, follow the [instructions](https://golang.org/doc/install) in th
 
 ```bash
 $ wget https://dl.google.com/go/go1.12.9.linux-amd64.tar.gz
-
 $ sudo tar -xvf go1.12.9.linux-amd64.tar.gz
 $ sudo mv go /usr/local
 ```
@@ -59,7 +58,7 @@ $ mkdir -p $GOPATH/src/github.com/lino-network/
 $ cd $GOPATH/src/github.com/lino-network/
 $ git clone https://github.com/lino-network/lino
 $ cd lino
-$ git checkout v0.4.2
+$ git checkout v0.5.1
 $ make get_tools && make install
 ```
 
@@ -77,8 +76,8 @@ If you want to connect to Lino Testnet, you should copy config and genesis file.
 
 ```bash
 $ lino init
-$ cp -a genesis/upgrade3/genesis.json $HOME/.lino/config/genesis.json
-$ cp -a genesis/upgrade3/config.toml $HOME/.lino/config/config.toml
+$ cp -a genesis/upgrade4/genesis.json $HOME/.lino/config/genesis.json
+$ cp -a genesis/upgrade4/config.toml $HOME/.lino/config/config.toml
 $ lino unsafe-reset-all
 ```
 
