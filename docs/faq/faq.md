@@ -47,7 +47,3 @@ The Recover Phrase is a 12-word mnemonic which is a user-friendly form of your p
 ## What is IDA and its relationship with LINO?
 
 IDA, or In-app Digital Asset, is a Lino App developer issued coin, that can be used only on that Lino App. 9.9% of any donation in IDA will be automatically converted to LINO and distributed to LINO Stake holders as Voting Rewards. More details can be found [here](../blockchain/ida.html).
-
-## When will Lino Blockchain go main net?
-
-Late November 2019.
