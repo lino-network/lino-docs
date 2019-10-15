@@ -70,6 +70,7 @@ module.exports = {
         displayAllHeaders: true,
         children: [
           ['/faq/faq.html', 'Lino FAQ'],
+          ['/faq/validator.html', 'Validator FAQ']
         ]
       },
     ],

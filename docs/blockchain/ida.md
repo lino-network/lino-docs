@@ -1,6 +1,6 @@
 # In-app Digital Asset(IDA)
 
-Due to the volatile nature of cryptocurrencies, large price swings are inevitable and hence they are not optimal to be used for daily transactions. Just imagine: which content creator could accept the fact that the total income received in cryptocurrency last month may suddenly drop 20% in value? That’s why IDA is designed to be used for donations and gifting without worrying about price fluctuation. Moreover, IDA is superior to fiat currencies in the Lino model since it’s programmable and all related economic behaviors can be recorded onto the blockchain.
+Due to the volatile nature of cryptocurrencies, large price swings are inevitable and hence they are not optimal to be used for daily transactions. Just imagine: A 20% drop in your cryptocurrency value for the past months earnings due to fluctuations in price. Which content creator would find this acceptable? That’s why IDA is designed to be used for donations and gifting without worrying about price fluctuation. Moreover, IDA is superior to fiat currencies in the Lino model since it’s programmable and all related economic behaviors can be recorded onto the blockchain.
 
 <p align="center" style="text-align: center;"><img align="center" src="../.vuepress/public/ida.jpg" /></p>
 
@@ -24,7 +24,7 @@ Only the issuing developer and affiliated developer accounts can transfer IDA. A
 
 The Consensus Rate of LINO is calculated on-chain based on LINO prices reported by all [validators](about) of Lino blockchain.
 
-Specifically, the validators will continuously update their LINO prices to the Lino blockchain. The validators can pull the LINO price data directly from exchanges or other reliable sources. Lino blockchain will compute a **weighted median** of LINO prices, called a **Price Point**, reported by all validators based on their [Committing Powers](../blockchain/validator.html#committing-power) every hour. The weighted median can guarantee the accuracy of Price Point will be maintained even if there are few outliers.
+Specifically, the validators will continuously update their LINO prices to the Lino blockchain. The validators can pull the LINO price data directly from reliable sources. Lino blockchain will compute a **weighted median** of LINO prices, called a **Price Point**, reported by all validators based on their [Committing Powers](../blockchain/validator.html#committing-power) every hour. The weighted median can guarantee the accuracy of Price Point will be maintained even if there are few outliers.
 
 The Consensus Rate of LINO, that is updated very hour, is the **median** of the last 36 Price Points.
 
