@@ -1,20 +1,28 @@
-# Join As A Validator
+# Join as Validator
 
-To be a validator, you should first be a voter with 200000 locked LINO Points and have 200000 more Lino Points in balance. Then run a full node with public access IP and sync to current height. You can check current height on [tracker](https://tracker.lino.network/#/). To check your node's height you can access http://<your node's IP>:26657/status. Once your node sync with the latest height, you can run cli on your fullnode:
-```bash
-./linocli validator-deposit --user=<your username> --priv-key=<your wallet private key> --amount=200000 --chain-id=lino-testnet-upgrade3 --sequence=<your sequence number>
+Before setting up your validator node, make sure you've already gone through the [Full Node Setup](/tutorial/full_node.html#set-up-fullnode-and-connect-to-testnet) guide.
+
+Validator will get hourly inflation from Lino Blockchain. All validators are shown on [tracker](https://tracker.lino.network/#/). For more information about validator please visit [validator](/blockchain/validator.html#validator).
+
+To be a validator, you should first have a Lino [account](/blockchain/account.html#account) with 100000 locked points. Then run a full node with public access IP and sync to current height. You can check current height on [tracker](https://tracker.lino.network/#/). To check your node's height you can access http://<your node's IP>:26657/status. Once your node sync with the latest height, you can run cli command on your fullnode machine:
 ```
-In above command, username is the voter who locks 200000 LINO Points and with 200000 LINO Points in balance. You can get your wallet private key on [Lino Account](https://account.lino.network/privkey). If you don't know your account's current sequence number, you can set sequence to 1 then execute the command. Blockchain will prompt your correct sequence number if it is incorrect. Once the command execute successfully, you should be able find yourself on [tracker](https://tracker.lino.network/#/) as the validator.
+linocli config chain-id "lino-testnet-upgrade4"
+linocli tx validator register <your username> --link=<your website url> --priv-key=<your wallet private key> --chain-id=lino-testnet-upgrade4 --sequence=<your sequence number> --fees=10000linocoin
+```
+
+>*NOTE*: Above command is required to be executed on the node with full node running. 
+
+In above command, username is the user who locks 100000 LINO Points. You can get your wallet private key on [Lino Account](https://account.lino.network/privkey). Website link is one you can use to display your information in wallet voting page. If you don't know your sequence number, you can set sequence to 1 then execute the command. Blockchain will prompt your correct sequence number if it is incorrect. Once the command execute successfully, you should be able find yourself on [tracker](https://tracker.lino.network/#/) as the validator.
 
 If you got error:
-```json
-ERROR:
-CheckTx failed: (155)
-{
-  "codespace":"lino",
-  "code":155,
-  "message":"msg: signature verification failed, chain-id:lino-testnet-upgrade3, seq:n"
-}
+```
+ERROR: CheckTx failed: (155) {"codespace":"lino","code":155,"message":"msg: signature verification failed, chain-id:lino-testnet-upgrade3, seq:n"}
 ```
 
 just correct the sequence number and chain id to the command above.
+
+## Private Key
+
+Validator private key is used by validator node to commit block. Validators need to make sure that their servers are always online and their private keys are not compromised. Validator private key is located at file `$HOME/.lino/config/priv_validator_key.json`. Node with same private key will be treated as the same validator. Double signing is not allowed so please make sure there is only one node running with correct private key file.
+
+Validator private key has nothing to do with user account private key so please don't mix them up.
