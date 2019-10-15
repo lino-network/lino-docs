@@ -17,7 +17,7 @@ Apps utilizing the Lino blockchain do not take any cuts from direct payments bet
 
 ### In-app Digital Asset (IDA)
 
-An App developer on Lino blockchain can issue its own fix-priced [IDA](../blockchain/ida.html) that can be used within that app only. IDA, for the first time, makes blockchain-based applications more user-friendly to non-crypto users.
+An App developer on Lino blockchain can issue its own fixed price [IDA](../blockchain/ida.html) that can be used within that app only. IDA, for the first time, makes blockchain-based applications more user-friendly to non-crypto users.
 
 ### Voting Rewards
 

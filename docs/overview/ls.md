@@ -16,8 +16,8 @@ LS holders will be able to get **Voting Rewards** based on their contributions t
 
 ## Conversion
 
-<p align="center" style="text-align: center;"><img align="center" src="../.vuepress/public/ls.jpeg" /></p>
+<p align="center" style="text-align: center;"><img align="center" src="../.vuepress/public/ls.jpg" /></p>
 
 **Stake In**: Stake In is the process of converting LINO to LS, which is instant.
 
-**Stake Out**: Stake Out is the process of converting LS to LINO. It takes 15 days to convert LS back to LINO.
+**Stake Out**: Stake Out is the process of converting LS to LINO. It takes 12 weeks to convert LS back to LINO.
