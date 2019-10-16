@@ -8,6 +8,14 @@ LINO is a decentralized cryptocurrency representing the fundamental unit of valu
 
 Lino Blockchain relies on a set of validators to secure the network. The role of a validator is to run a full node and participate in consensus by broadcasting a cryptographic signature signed by its private key. Validators verify messages and commit new blocks to the blockchain and receive message fees and Validator Rewards in return.
 
+## What is voting for validators?
+
+Voting is required to claim your LP rewards. Your total votes is equivalent to the amount of your Locked Points. You can vote for at most 3 validator candidates. If you vote for multiple validator candidates, your votes will be evenly divided and counted for each validator candidate. The top 21 validator candidates with the most votes will be selected to the Validator Set.
+
+## Which validators should I vote for?
+
+It is your responsibility, as a Locked Point holder, to select the reliable validators to secure the Lino blockchain. Check the bio link of each validator candidate and know who they are before voting.
+
 ## How to become Validator
 
 Running a validator requires a minimum amount of LINO Stake and technical skills. More details can be found [here](../blockchain/validator.html).
