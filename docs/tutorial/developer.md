@@ -10,7 +10,7 @@ Once you have enough Lino Stake, you can register as developer through our comma
 
 For [linocli](https://github.com/lino-network/lino/tree/master/docs/cli), command is
 ```
-linocli tx developer register <username> --website=<your website> --description=<description> --appmeta=<app meta> --priv-key=<your wallet private key> --chain-id=lino-testnet-upgrade3 --sequence=1 --fees=10000linocoin
+linocli tx developer register <username> --website=<your website> --description=<description> --appmeta=<app meta> --priv-key=<your wallet private key> --chain-id=lino-testnet-upgrade4 --sequence=1 --fees=10000linocoin
 ```
 
 In above command, username is the Lino Stake holder. This account would be the main App account which is used to receive reward, grant permission and issue IDA. Click [here](/blockchain/developer.html#app-developer) for more information.
