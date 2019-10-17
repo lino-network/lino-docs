@@ -1,4 +1,4 @@
-# Set Up Fullnode And Connect to Testnet
+# Set up Fullnode And Connect to Testnet
 
 This document explains how to set up a fullnode and connect to the Testnet of the Lino Blockchain.
 
