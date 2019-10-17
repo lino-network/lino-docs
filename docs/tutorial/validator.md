@@ -21,7 +21,7 @@ If you don't know your sequence number, you can set it to 1 and execute the comm
 
 If you get the following error:
 ```
-ERROR: CheckTx failed: (155) {"codespace":"lino","code":155,"message":"msg: signature verification failed, chain-id:lino-testnet-upgrade3, seq:n"}
+ERROR: CheckTx failed: (155) {"codespace":"lino","code":155,"message":"msg: signature verification failed, chain-id:lino-testnet-upgrade4, seq:n"}
 ```
 
 you should correct the sequence number and chain id in the command above.
