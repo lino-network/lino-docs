@@ -6,10 +6,11 @@
 
 ### Become A Validator Candidate
 
-You can follow the [tutorial](about) to register a Validator Account.
+You can follow the [tutorial](/blockchain/validator.html#join-as-validator) to register a Validator Account.
 
 1. Stake in at least a minimum amount of 100,000 [LS](../overview/ls.html)
-2. Send a [validator candidate registration message](about) to the Lino blockchain
+2. Set up the [full node](/blockchain/full_node.html#software-setup-manual-installation) and sync with blockchain.
+3. Send a [validator candidate registration message](/blockchain/validator.html#join-as-validator) to the Lino blockchain
 
 After becoming a validator candidate, one can receive votes from LS holders and potentially be selected to the [Validator Set](validator.html#validator-set-validators-standby-validators).
 
