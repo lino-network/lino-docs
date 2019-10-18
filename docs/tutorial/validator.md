@@ -41,5 +41,6 @@ linocli tx validator update <username> --link='{"website":"<your website url>", 
 ```
 
 For example:
+```
 linocli tx validator update validator1 --link='{"website":"https://lino.network", "identity":"CFADC7490E87BCB4"}' --priv-key= --sequence=20 --fees=10000linocoin
 ```
