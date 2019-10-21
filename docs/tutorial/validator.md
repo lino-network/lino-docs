@@ -37,10 +37,19 @@ Validator private key has nothing to do with Reset private key or Signing privat
 To update your website url and Keybase identity you can run following command:
 
 ```
-linocli tx validator update <username> --link='{"website":"<your website url>", "identity":"<your keybase id>"}' --priv-key=<your wallet private key> --sequence=<your sequence number> --fees=10000linocoin
+linocli tx validator update <username> --link='{"website":"<your website url>", "identity":"<your keybase id>"}' --priv-key=<your private key> --sequence=<your sequence number> --fees=10000linocoin
 ```
 
 For example:
 ```
 linocli tx validator update validator1 --link='{"website":"https://lino.network", "identity":"CFADC7490E87BCB4"}' --priv-key= --sequence=20 --fees=10000linocoin
 ```
+
+## Revoke Validator
+You can revoke your validator at any time. Once revoke msg is accepted by the blockchain there is one week of grace period that your stake is still frozen. After one week of frozen period you are able to stake out your stake. To revoke your validator you can run following command:
+```
+linocli tx validator revoke <username> --priv-key=<your private key> --sequence=<your sequence number> --fees=10000linocoin
+```
+
+## Jail
+Validator will be slashed if they miss 600 blocks or fail to feed price. If validator is slashed over a certain amount of times (6 for testnet) or slashed less than the minimum Lino Stake requirement (100000 Lino for testnet), your validator will be put into jail. Once your node is in jail it will no longer sign the msg and receive inflation reward. You can join back to validator set or revoke your validator. To join back to validator set you need to make sure you have meet the minimum Lino Stake requirement, then send validator register msg again to blockchain. To revoke the validator you need to send validator revoke msg to blockchain.
