@@ -406,40 +406,42 @@ $  curl -X POST --data-binary '{"jsonrpc":"2.0","method":"abci_query","params":{
 }
 ```
 
-### Stake Info
-Returns a user's stake information.
+### Voting Info
+Returns a user's voting validator list.
 
 #### Parameters
 1. username - the username of a Lino Blockchain user.
 
 #### Returns
-String - Stake information, which includes total Lino stake (in Lino Coin, 1 LINO = 100000 Lino Coin), delegation info (ytu 09/29/2019: deprecated in next update), duty and frozen amount (ytu 09/29/2019: enable in next update).
+String - User voting information, including validator name and voting power.
 
 #### Example
 ```json
 // Request, username is `dlivetv`
-$  curl -X POST --data-binary '{"jsonrpc":"2.0","method":"abci_query","params":{"height":"0","trusted":false,"path":"/custom/vote/voter/dlivetv","data":""}}' "https://fullnode.lino.network" | jq -r .result.response.value | base64 -d | jq .
+$  curl -X POST --data-binary '{"jsonrpc":"2.0","method":"abci_query","params":{"height":"0","trusted":false,"path":"/custom/validator/electionVoteList/ltzonda","data":""}}' "https://fullnode.lino.network" | jq -r .result.response.value | base64 --decode | jq .
 
 // Result
 {
-  "username": "dlivetv",
-  "lino_stake": {
-    "amount": "100000000000"
-  },
-  "delegated_power": {
-    "amount": "0"
-  },
-  "delegate_to_others": {
-    "amount": "0"
-  },
-  "last_power_change_at": "1568322539",
-  "interest": {
-    "amount": "0"
-  },
-  "duty": "0",
-  "frozen_amount": {
-    "amount": "0"
-  }
+  "election_votes": [
+    {
+      "validator_name": "cryptocloaker",
+      "votes": {
+        "amount": "16700000000"
+      }
+    },
+    {
+      "validator_name": "dlive-09156526",
+      "votes": {
+        "amount": "16700000000"
+      }
+    },
+    {
+      "validator_name": "hooli",
+      "votes": {
+        "amount": "16700000000"
+      }
+    }
+  ]
 }
 ```
 
