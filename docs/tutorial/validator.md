@@ -6,7 +6,7 @@ Validator will get hourly inflation from Lino Blockchain. All validators are sho
 
 In order to be qualified as a validator candidate, you should first have a Lino [account](/blockchain/account.html#account) with 100,000 locked points. The next step is to run a full node with a publicly accessible IP and sync to current height. You can check the current height on [tracker](https://tracker.lino.network/#/). You can query `http://<your node's IP>:26657/status` to check your node's current height. Once your node catches up with the latest block, you can run the following CLI command on your full node machine to become a Validator Candidate:
 ```
-linocli tx validator register <your username> --link='{"website":"<your website url>", "identity":"<your keybase id>"}' --priv-key=<your private key> --chain-id=lino-testnet-upgrade4 --sequence=<your sequence number> --fees=10000linocoin
+linocli tx validator register <your username> --link='{"website":"<your website url>", "identity":"<your keybase id>"}' --priv-key=<your private key> --chain-id=lino-testnet-upgrade5 --sequence=<your sequence number> --fees=10000linocoin
 ```
 
 >*NOTE*: The above command is required to be executed on a running full node.
@@ -21,7 +21,7 @@ If you don't know your sequence number, you can set it to 1 and execute the comm
 
 If you get the following error:
 ```
-ERROR: CheckTx failed: (155) {"codespace":"lino","code":155,"message":"msg: signature verification failed, chain-id:lino-testnet-upgrade4, seq:n"}
+ERROR: CheckTx failed: (155) {"codespace":"lino","code":155,"message":"msg: signature verification failed, chain-id:lino-testnet-upgrade5, seq:n"}
 ```
 
 you should correct the sequence number and chain id in the command above.

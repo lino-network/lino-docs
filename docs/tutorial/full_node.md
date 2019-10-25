@@ -58,7 +58,7 @@ $ mkdir -p $GOPATH/src/github.com/lino-network/
 $ cd $GOPATH/src/github.com/lino-network/
 $ git clone https://github.com/lino-network/lino
 $ cd lino
-$ git checkout v0.5.2
+$ git checkout v0.6.3
 $ make get_tools && make install
 ```
 
@@ -76,8 +76,8 @@ If you want to connect to Lino Testnet, you should copy config and genesis file.
 
 ```bash
 $ lino init
-$ cp -a genesis/upgrade4/genesis.json $HOME/.lino/config/genesis.json
-$ cp -a genesis/upgrade4/config.toml $HOME/.lino/config/config.toml
+$ cp -a genesis/upgrade5/genesis.json $HOME/.lino/config/genesis.json
+$ cp -a genesis/upgrade5/config.toml $HOME/.lino/config/config.toml
 $ lino unsafe-reset-all
 ```
 
