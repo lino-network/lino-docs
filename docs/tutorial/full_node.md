@@ -58,7 +58,7 @@ $ mkdir -p $GOPATH/src/github.com/lino-network/
 $ cd $GOPATH/src/github.com/lino-network/
 $ git clone https://github.com/lino-network/lino
 $ cd lino
-$ git checkout v0.6.3
+$ git checkout v0.6.6
 $ make get_tools && make install
 ```
 
