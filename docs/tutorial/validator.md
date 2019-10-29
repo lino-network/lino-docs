@@ -4,14 +4,14 @@ Before setting up your validator node, make sure you've already gone through the
 
 Validator will get hourly inflation from Lino Blockchain. All validators are shown on [tracker](https://tracker.lino.network/#/). For more information about validator please visit [here](/blockchain/validator.html#validator).
 
-In order to be qualified as a validator candidate, you should first have a Lino [account](/blockchain/account.html#account) with 100,000 locked points. The next step is to run a full node with a publicly accessible IP and sync to current height. You can check the current height on [tracker](https://tracker.lino.network/#/). You can query `http://<your node's IP>:26657/status` to check your node's current height. Once your node catches up with the latest block, you can run the following CLI command on your full node machine to become a Validator Candidate:
+In order to be qualified as a validator candidate, you should first have a Lino [account](/blockchain/account.html#account) with 100,000 LINO Stake. The next step is to run a full node with a publicly accessible IP and sync to current height. You can check the current height on [tracker](https://tracker.lino.network/#/). You can query `http://<your node's IP>:26657/status` to check your node's current height. Once your node catches up with the latest block, you can run the following CLI command on your full node machine to become a Validator Candidate:
 ```
 linocli tx validator register <your username> --link='{"website":"<your website url>", "identity":"<your keybase id>"}' --priv-key=<your private key> --chain-id=lino-testnet-upgrade4 --sequence=<your sequence number> --fees=10000linocoin
 ```
 
 >*NOTE*: The above command is required to be executed on a running full node.
 
-`<your username>` is the username of your Lino account that has over 100,000 Locked Points. You can get your Signing Private key on [Lino Account](https://account.lino.network/privkey).
+`<your username>` is the username of your Lino account that has over 100,000 LINO Stake. You can get your Signing Private key on [Lino Account](https://account.lino.network/privkey).
 
 `<your website url>` is a bio link about you that will be displayed on the wallet voting page.
 
