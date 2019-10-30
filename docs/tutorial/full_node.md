@@ -109,3 +109,25 @@ Start the full node:
 $ lino start
 ```
 Your node should start syncing to our Lino Testnet.
+
+## Start Fullnode from Snapshot
+
+Lino officially takes snapshot of blockchain data every 30 mins and uploads to AWS S3. You can start your node from that snapshot to save sync time.
+
+To start from snapshot, you should first clear your current blockchain data with command:
+
+```bash
+$ lino unsafe-reset-all
+```
+
+Once data is cleared you can download the snapshot and uncompress it to data folder:
+```bash
+$ wget "https://lino-blockchain-data-ireland.s3-eu-west-1.amazonaws.com/data.tar.gz"
+$ mkdir -p $HOME/.lino/data/
+$ tar -xzvf data.tar.gz -C $HOME/.lino/data/
+```
+
+Then you can start you node with command:
+```bash
+$ lino start
+```
