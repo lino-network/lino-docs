@@ -34,6 +34,7 @@ module.exports = {
         title: 'Overview',
         sidebarDepth: 2,
         children: [
+          ['/overview/notice.html', 'Notice & Disclaimer'],
           ['/overview/intro.html', 'Introduction'],
           ['/overview/ls.html', 'LINO Stake'],
           ['/overview/block_rewards_distribution.html', 'Block Rewards Distribution'],

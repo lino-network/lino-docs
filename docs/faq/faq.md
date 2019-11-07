@@ -10,7 +10,7 @@ Lino Blockchain relies on a set of validators to secure the network. The role of
 
 ## What is voting for validators?
 
-Voting is required to claim your LP rewards. Your total votes is equivalent to the amount of your Locked Points. You can vote for at most 3 validator candidates. If you vote for multiple validator candidates, your votes will be evenly divided and counted for each validator candidate. The top 21 validator candidates with the most votes will be selected to the Validator Set.
+Voting on features of the network is required to claim your LP rewards. Your total votes is equivalent to the amount of your Locked Points. You can vote for at most 3 validator candidates. If you vote for multiple validator candidates, your votes will be evenly divided and counted for each validator candidate. The top 21 validator candidates with the most votes will be selected to the Validator Set.
 
 ## Which validators should I vote for?
 
@@ -22,7 +22,7 @@ Running a validator requires a minimum amount of LINO Stake and technical skills
 
 ## How to participate in Lino Blockchain governance system?
 
-Any LINO Stake holders can participate in the governance system.
+Any LINO Stake holders can participate in the governance system to vote on features of the network.
 
 ## What are LINO Stake? (How to stake in & stake out & claim rewards)
 
@@ -32,7 +32,7 @@ LINO Stake is a staking feature of LINO. By Staking in your LINO, your can conve
 
 ## What is Content Rewards and how to claim
 
-Content Rewards are issued by the Lino blockchain to the content creators on Lino Apps.   For example, after a streamer on DLive receiving any donation on a live stream, this streamer will receive Content Rewards after 7 days. The Content Rewards will be sent to content creator's account directly. No need to claim.
+Content Rewards are issued by the Lino blockchain to the content creators on Lino Apps. For example, after a streamer on DLive receiving any donation on a live stream, this streamer will receive Content Rewards after 7 days. The Content Rewards will be sent to content creator's account directly. No need to claim.
 
 ## How does the transaction fee work?
 
@@ -54,4 +54,4 @@ The Recover Phrase is a 12-word mnemonic which is a user-friendly form of your p
 
 ## What is IDA and its relationship with LINO?
 
-IDA, or In-app Digital Asset, is a Lino App developer issued coin, that can be used only on that Lino App. 9.9% of any donation in IDA will be automatically converted to LINO and distributed to LINO Stake holders as Voting Rewards. More details can be found [here](../blockchain/ida.html).
+IDA, or In-app Digital Asset, is a Lino App developer issued coin, that can be used only on that Lino App. 9.9% of any donation in IDA will be automatically converted to LINO and distributed to LINO Stake holders as Voting Rewards via secondary smart contracts. More details can be found [here](../blockchain/ida.html).
